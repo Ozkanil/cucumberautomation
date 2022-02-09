@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,9 +9,11 @@ import utilities.Driver;
 
 public class MainPageFunctionalities {
 
+
     public MainPageFunctionalities() {
 
-        PageFactory.initElements(Driver.getDriver(), this);
+      PageFactory.initElements(Driver.getDriver(),this);
+
     }
 
     @FindBy (partialLinkText = "Signup")
@@ -18,5 +21,18 @@ public class MainPageFunctionalities {
 
     @FindBy(xpath = "(//h2)[3]")
     public WebElement signupText;
+
+    @FindBy(name= "name")
+    public WebElement nameBox;
+
+    @FindBy (xpath = "(//*[@name=\"email\"])[2]")
+    public WebElement emailBox;
+
+    @FindBy(xpath = "(//*[@type= 'submit'])[2]")
+    public WebElement accountCreatSignupButton;
+
+    @FindBy(xpath = "//b[contains (text(),'Enter Account Information')]")
+    public WebElement createAccountPageVerification;
+
 
 }

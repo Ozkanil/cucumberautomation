@@ -40,62 +40,27 @@ public class RegisterUserStepDefs {
     public void user_verifies_new_user_signup_is_visible() {
 
         Assert.assertTrue(mainPageFunctionalities.signupText.isDisplayed());
+
     }
 
     @When("user enters name and email")
     public void user_enters_name_and_email() {
 
+        mainPageFunctionalities.nameBox.sendKeys("Ozkan");
+        mainPageFunctionalities.emailBox.sendKeys("ozkan@gmail.com");
 
     }
+
     @When("user clicks signup button")
     public void user_clicks_signup_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        mainPageFunctionalities.accountCreatSignupButton.click();
     }
+
     @When("user verifies that enter account information is visible")
     public void user_verifies_that_enter_account_information_is_visible() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-    @When("user fills details")
-    public void user_fills_details() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-    @When("user selects checkbox signup for our newslater")
-    public void user_selects_checkbox_signup_for_our_newslater() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-    @When("user selects checkbox receive special offers")
-    public void user_selects_checkbox_receive_special_offers() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-    @When("user clicks create account button")
-    public void user_clicks_create_account_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-    @Then("user verifies that acount is created")
-    public void user_verifies_that_acount_is_created() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+      Assert.assertTrue(mainPageFunctionalities.createAccountPageVerification.isDisplayed());
     }
 
-    @When("user clicks continue button")
-    public void userClicksContinueButton() {
-    }
 
-    @And("user verifies that logged in")
-    public void userVerifiesThatLoggedIn() {
-    }
-
-    @And("user clicks delete account button")
-    public void userClicksDeleteAccountButton() {
-    }
-
-    @Then("user verifies that acount deleted")
-    public void userVerifiesThatAcountDeleted() {
-    }
 }

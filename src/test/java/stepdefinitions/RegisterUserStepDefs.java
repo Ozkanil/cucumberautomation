@@ -30,8 +30,8 @@ public class RegisterUserStepDefs {
         Assert.assertEquals("Automation Exercise", homePageTitle);
 
     }
-    @Then("user clicks on signup button")
-    public void user_clicks_on_signup_button() {
+    @Then("user clicks signup_login button")
+    public void user_clicks_on_signup_login_button() {
 
         mainPageFunctionalities.signupButton.click();
 
@@ -51,7 +51,7 @@ public class RegisterUserStepDefs {
 
     }
 
-    @When("user clicks signup button")
+    @When("user clicks signup_button")
     public void user_clicks_signup_button() {
         mainPageFunctionalities.accountCreatSignupButton.click();
     }

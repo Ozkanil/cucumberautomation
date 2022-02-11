@@ -18,9 +18,9 @@ public class FillDetailsStepDefs {
 
         fillDetailsPage.genderBox.click();
         fillDetailsPage.passwodBox.sendKeys("123456");
-        Driver.selectByIndex(fillDetailsPage.dayDropdown,5);
-        Driver.selectByIndex(fillDetailsPage.monthDropdown,4);
-        Driver.selectByIndex(fillDetailsPage.yearDropdown,25);
+        Driver.selectByIndex(fillDetailsPage.dayDropdown,4);
+        Driver.selectByIndex(fillDetailsPage.monthDropdown,3);
+        Driver.selectByIndex(fillDetailsPage.yearDropdown,27);
 
     }
     @When("user selects checkbox signup for our newslater")

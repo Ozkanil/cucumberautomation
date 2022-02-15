@@ -46,8 +46,8 @@ public class RegisterUserStepDefs {
     @When("user enters name and email")
     public void user_enters_name_and_email() {
 
-        mainPageFunctionalities.nameBox.sendKeys("josh");
-        mainPageFunctionalities.emailBox.sendKeys("josh@gmail.com");
+        mainPageFunctionalities.nameBox.sendKeys("john");
+        mainPageFunctionalities.emailBox.sendKeys("john@gmail.com");
 
     }
 
@@ -63,4 +63,10 @@ public class RegisterUserStepDefs {
     }
 
 
+    @And("user verifies email address is visible is displayed")
+    public void userVerifiesEmailAddressIsVisibleIsDisplayed() {
+
+        Assert.assertTrue(mainPageFunctionalities.existingEmailVerification.isDisplayed());
+
+    }
 }

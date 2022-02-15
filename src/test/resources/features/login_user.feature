@@ -9,7 +9,7 @@
      And user verifies login to your account is visible
      And user enters correct email_address and password
      |email_address  |password|
-     |ozkan@gmail.com|123456|
+     |josh@gmail.com|123456|
      And user clicks login box
      Then user verifies that logged in
      Then user clicks logout button

@@ -10,7 +10,7 @@ Feature: Register_User_Functionality
 
     Scenario: TC01_signup_user
       When user enters name and email
-      And user clicks signup_login button
+      And user clicks signup_button
       And user verifies that enter account information is visible
       And user fills details
       And user selects checkbox signup for our newslater

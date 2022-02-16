@@ -13,9 +13,8 @@ Feature: Login_user_correct
     Then user clicks logout button
     And user verifies login to your account is visible
 
-
   @login_user_excel_negaive
-  Scenario: TC02_Login_User_With_Correct_email_and_password
+  Scenario: TC03_Login_User_With_Incorrect_email_and_password
     When user launches the browser
     And user navigates to home page
     And user verifies home page is visible

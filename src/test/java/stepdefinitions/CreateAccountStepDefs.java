@@ -8,7 +8,7 @@ import pages.MainPageFunctionalities;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class RegisterUserStepDefs {
+public class CreateAccountStepDefs {
 
     MainPageFunctionalities mainPageFunctionalities= new MainPageFunctionalities();
 
@@ -46,8 +46,8 @@ public class RegisterUserStepDefs {
     @When("user enters name and email")
     public void user_enters_name_and_email() {
 
-        mainPageFunctionalities.nameBox.sendKeys("john");
-        mainPageFunctionalities.emailBox.sendKeys("john@gmail.com");
+        mainPageFunctionalities.nameBox.sendKeys("herry");
+        mainPageFunctionalities.emailBox.sendKeys("herry@gmail.com");
 
     }
 

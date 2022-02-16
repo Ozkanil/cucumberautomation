@@ -3,9 +3,12 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import pages.TC6_ContactUsForm;
 import utilities.Driver;
 
@@ -54,9 +57,9 @@ public class ContactusStepDefs {
     public void userClicksOnOKButton() throws InterruptedException {
 
         Thread.sleep(5000);
+
         Driver.getDriver().switchTo().alert().accept();
 
-        Thread.sleep(3000);
     }
 
     @And("verify success message")

@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@create_account_with_existing_email",
+        tags = "@test_cases_page",
         dryRun = false
 )
 public class Runner {

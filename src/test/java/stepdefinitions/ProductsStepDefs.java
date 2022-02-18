@@ -1,5 +1,7 @@
 package stepdefinitions;
 
+import io.cucumber.java.bs.A;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -51,4 +53,42 @@ public class ProductsStepDefs {
 
     }
 
+    @And("clicks view product for any product on home page")
+    public void clicksViewProductForAnyProductOnHomePage() {
+
+        productsPage.viewProductHomePage.click();
+    }
+
+    @And("user verifies product detail is opened")
+    public void userVerifiesProductDetailIsOpened() {
+
+        String titlePage=Driver.getDriver().getTitle();
+        Assert.assertTrue(titlePage.contains("Product Details"));
+    }
+
+    @And("user increases quantity to four")
+    public void userIncreasesQuantityToFour() {
+
+        productsPage.quatityBox.clear();
+        productsPage.quatityBox.sendKeys("4");
+    }
+
+    @And("user clicks add to cart button")
+    public void userClicksAddToCartButton() {
+
+        productsPage.addToCartButtonProduct.click();
+    }
+
+    @And("user clicks view cart")
+    public void userClicksViewCart() {
+
+        productsPage.viewCartButtonProduct.click();
+    }
+
+    @Then("user verifies that product is displayed in cart page with exact quantity")
+    public void userVerifiesThatProductIsDisplayedInCartPageWithExactQuantity() {
+
+       String quentity= productsPage.quatityBoxInChart.getText();
+        Assert.assertEquals("4",quentity);
+    }
 }

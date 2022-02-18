@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -46,8 +47,8 @@ public class CreateAccountStepDefs {
     @When("user enters name and email")
     public void user_enters_name_and_email() {
 
-        mainPageFunctionalities.nameBox.sendKeys("herry");
-        mainPageFunctionalities.emailBox.sendKeys("herry@gmail.com");
+        mainPageFunctionalities.nameBox.sendKeys(Faker.instance().name().fullName());
+        mainPageFunctionalities.emailBox.sendKeys(Faker.instance().internet().emailAddress());
 
     }
 

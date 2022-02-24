@@ -25,6 +25,9 @@ public class ViewBrandProductsPage {
     @FindBy(xpath = "//*[text()='Brand - Polo Products']")
     public WebElement poloProductsText;
 
+    @FindBy (xpath = "//*[text()='Brand - H&M Products']")
+    public WebElement hmProductsText;
+
     @FindBy(xpath = "//a[@href='/brand_products/H&M']")
     public WebElement hmproducts;
 }

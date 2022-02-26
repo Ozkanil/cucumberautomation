@@ -1,6 +1,7 @@
 @create_account_with_existing_email
 Feature: Create account with existing email
 
+  @vip
   Scenario: TC05_create account with existing email
     When user launches the browser
     And user navigates to home page

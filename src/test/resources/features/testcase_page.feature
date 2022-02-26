@@ -1,6 +1,6 @@
 @test_cases_page
 Feature: Test_cases_page
-
+  @vip
   Scenario: TC07_test_cases_page
 
     When user launches the browser

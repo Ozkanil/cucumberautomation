@@ -1,7 +1,7 @@
 @recommended_items
 Feature:TC22_AddRecommendedItemsToCart
 
-  @recommended_items
+  @recommended_items @vip
   Scenario: TC22_AddRecommendedItemsToCart
     When user launches the browser
     And user navigates to home page
